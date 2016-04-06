@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="ru.ilfat.listofgoods.ActivityEdit"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="216dp"
+                android:layout_height="49dp">
+
+                <EditText
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edName"
+                    android:hint="Наименование" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="122dp"
+                android:layout_height="51dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edPrice"
+                    android:hint="Цена" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="54dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edSum"
+                    android:hint="Количество" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="166dp"
+            android:layout_weight="0.22">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="183dp"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/edDescrip"
+                android:hint="Описание" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:text="Добавить"
+                android:layout_weight="0.55"
+                android:id="@+id/btnAdd"
+                android:onClick="onAddClick" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Отмена"
+                android:layout_weight="0.50"
+                android:id="@+id/btnCancel"
+                android:onClick="onCancelClick" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
