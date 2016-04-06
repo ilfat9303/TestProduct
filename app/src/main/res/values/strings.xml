@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Товары</string>
+    <string name="title_item_detail">Описание</string>
+    <string name="Delete">Удалить</string>
+    <string name="Create">Редактировать</string>
+
+</resources>
